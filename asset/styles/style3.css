@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Comic Neue';
+}
+
+#cabecera{
+height: 300px;
+width: 100%;
+background-image: url('D:/Repositorios/equipoHockey-2/asset/img/stadium.png');
+background-size:cover;
+background-repeat: no-repeat;
+filter: grayscale(50%);
+margin-top: 30px;
+
+}
+
+h1{
+    /*display: inline-block;
+    font-family:'Comic Neue';
+    font-size: 50px;
+    font-style: italic;
+    position: absolute;
+    margin-top: -300px;
+    color: white;
+    left:20%;*/
+    color:transparent;
+}
+
+#cabecera:hover{
+    transition: all 0.9s ease;
+    filter: none;
+}
+
+.seccion-eventos{
+    background-color: black;
+    display: inline;
+    height: 40px;
+    width: 100%;
+    top: 50px;
+    position: relative;
+}
+.titulo-seccion-eventos{
+    color: white;
+    height: 100%;
+    text-align:center;
+    font-weight: bolder; 
+    font-size: 25px;
+    padding-top: 3px;
+    background-color: burlywood;
+}
+
+.logo{
+    position: absolute;
+    left: 450px;
+    top: -430px;
+    background-color: transparent;
+    filter: grayscale(90%);
+    height: 370px;
+    width: 370px;
+    transform: scale(1.2, 0.8);
+}
+
+.barra-navegacion{
+    position: absolute;
+    display: inline-block;
+    background-color: hsl(123, 40%, 35%);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+.barra-navegacion a{
+    display: inline-block;
+    position:relative;
+    margin-inline: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor-eventos{
+position: relative;
+left: 20%;
+padding-top: 20px;
+}
+
+.lista-eventos li{
+ margin-bottom: 10px;
+ margin-block-start: 20px;
+}
+
+h3{
+    font-style:italic;
+    font-weight: bolder;
+}
+ul{
+    list-style-type: none;
+}
+
+ul > p{
+font-weight: bold;
+}
+
+#btn-index:active {
+    text-decoration: none;
+    color: red;
+}
+
+a:link{
+    color: aqua;
+}
+
+
+#texto-email{
+
+    font-style: normal;
+    text-align:justify;
+    margin-left: 200px;
+    padding-top: 20px;
+    
+}
+
+.txt-mision{
+    font-style: normal;
+    text-align:justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 40px;
+}
+
+.txt-mision > h3{
+
+    font-weight: bolder;
+    font-style: normal;
+}
+
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+}
