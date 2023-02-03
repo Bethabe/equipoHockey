@@ -7,26 +7,14 @@
 }
 
 #cabecera{
+display: flex;
 height: 300px;
 width: 100%;
-background-image: url('D:/Repositorios/equipoHockey-2/asset/img/stadium.png');
+background-image: url('../img/design1_image2.jpg');
 background-size:cover;
 background-repeat: no-repeat;
-filter: grayscale(50%);
-margin-top: 30px;
-
-}
-
-h1{
-    /*display: inline-block;
-    font-family:'Comic Neue';
-    font-size: 50px;
-    font-style: italic;
-    position: absolute;
-    margin-top: -300px;
-    color: white;
-    left:20%;*/
-    color:transparent;
+filter: grayscale(60%);
+justify-content:space-between;
 }
 
 #cabecera:hover{
@@ -34,67 +22,104 @@ h1{
     filter: none;
 }
 
-.seccion-eventos{
-    background-color: black;
-    display: inline;
-    height: 40px;
-    width: 100%;
-    top: 50px;
-    position: relative;
-}
-.titulo-seccion-eventos{
-    color: white;
-    height: 100%;
-    text-align:center;
-    font-weight: bolder; 
-    font-size: 25px;
-    padding-top: 3px;
-    background-color: burlywood;
-}
-
-.logo{
+#titulo-pagina{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    font-style: normal;
     position: absolute;
-    left: 450px;
-    top: -430px;
+    margin-top: -300px;
+    color: black;
+    margin-top:-180px;
+    font-weight: bolder;
+}
+.logo{
+    order:1;
+    align-self: center;
     background-color: transparent;
     filter: grayscale(90%);
-    height: 370px;
-    width: 370px;
+    height: 200px;
+    width: 210px;
     transform: scale(1.2, 0.8);
+    margin-left: 850px;
+    margin-top: -170px;
 }
 
 .barra-navegacion{
-    position: absolute;
-    display: inline-block;
-    background-color: hsl(123, 40%, 35%);
-    width: 100%;
-    height: 50px;
+    order:2;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 15%;
+    height: 100%;
+    color: white;
     text-align: center;
-    padding-top: 10px;
 }
 .barra-navegacion a{
-    display: inline-block;
-    position:relative;
-    margin-inline: 100px;
+    display: block;
+    margin-block: 30px;
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
     color: blanchedalmond;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Verdana', 'sans-serif';
 }
 
+a:hover{
+    transition: all 0.5s ease;
+    transform: scale(110%);
+    color:goldenrod;
+}
+.seccion-pagina{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+}
+.titulo-seccion-pagina{
+    color: white;
+    padding-top: 5px;
+    text-align:center;
+    font-weight: bolder; 
+    font-size: 50px;
+}
 .contenedor-eventos{
+    display: flex;
+height: 500px;
 position: relative;
-left: 20%;
-padding-top: 20px;
+background-image: url('../img/hockey1.jpg');
+background-position: center;
+filter: brightness(50%) grayscale(70%);
+justify-content: center;
+}
+.lista-eventos{
+    margin-top: 70px;
+    width: 500px;
 }
 
-.lista-eventos li{
- margin-bottom: 10px;
- margin-block-start: 20px;
+.lista-eventos li h3{
+    border-radius: 80px 40px;
+    border-color: white;
+    border-width: 5px;
+    border-spacing: 5px;
+    border-style:groove;
+    background-color:forestgreen;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
 }
 
-h3{
+.lista-eventos li h3:hover{
+    filter: brightness(200%);
+}
+.lista-eventos li p{
+    background-color:white;
+    height: 70px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 130px 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+/* h3{
     font-style:italic;
     font-weight: bolder;
 }
@@ -106,31 +131,24 @@ ul > p{
 font-weight: bold;
 }
 
-#btn-index:active {
-    text-decoration: none;
-    color: red;
-}
-
-a:link{
-    color: aqua;
-}
-
-
 #texto-email{
-
     font-style: normal;
     text-align:justify;
     margin-left: 200px;
     padding-top: 20px;
-    
-}
+} */
 
 .txt-mision{
     font-style: normal;
     text-align:justify;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-top: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(216, 216, 60, 0.637);
 }
 
 .txt-mision > h3{
@@ -139,7 +157,199 @@ a:link{
     font-style: normal;
 }
 
+#img-cuerpo-acerca{
+    position:relative;
+    left: 35%;
+    box-shadow:20px 20px 20px 5px rgba(20, 20, 20, 0.3);
+    border-radius: 30px 40px;
+    filter: sepia(60%);
+}
+
 body{
     margin-left: 15px;
     margin-right: 15px;
+}
+.contenedor-contacto{
+display: flex;
+height: 400px;
+align-content: center;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 35px;
+background-image: url('../img/hockey2.jpg');
+background-size: cover;
+filter:saturate(250%) brightness(160%) grayscale(1200%) ;
+}
+#texto-email{
+width: 500px;
+height: 400px;
+background-color: rgba(0, 0, 0, 0.85);
+margin-left: 300px;
+border-radius: 12px 12px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 40px;
+text-align: center;
+padding-top: 30px;
+}
+#texto-email a{
+    display: inline-block;
+    color: white;
+}
+
+#seccion-reglas{
+  background-color: rgb(28, 90, 119);
+}
+.contenedor-titulo-reglas{
+text-align: center;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.reglamento-juego{
+    margin-left: 180px;
+    margin-right: 180px;
+    text-align: justify;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("../img/logo_patos.png");
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.lista-desordenada.uno li{
+    list-style: circle;
+    list-style-position: inside;
+    text-indent: 15px;
+    padding-left: 30px;
+}
+.lista-desordenada.uno li::marker{
+position: relative;
+}
+
+.sublista-ordenada.uno li{
+    list-style-position: inside;
+}
+
+.lista-ordenada.uno{
+    list-style-position: inside;
+}
+.lista-ordenada.uno li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lista-descriptiva.uno p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lista-ordenada.uno li::marker{
+    font-weight: bold;
+}
+.sublista-ordenada.uno li::marker{
+    font-weight: normal;
+}
+.lista-descriptiva.dos p{
+    padding-bottom: 10px;
+}
+#seccion-tabla-info{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    background-image: linear-gradient(
+  45deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(1deg 38% 8%) 8%,
+  hsl(359deg 22% 13%) 17%,
+  hsl(359deg 17% 17%) 25%,
+  hsl(360deg 14% 22%) 33%,
+  hsl(360deg 12% 27%) 42%,
+  hsl(0deg 10% 32%) 50%,
+  hsl(360deg 12% 27%) 58%,
+  hsl(360deg 14% 22%) 67%,
+  hsl(359deg 17% 17%) 75%,
+  hsl(359deg 22% 13%) 83%,
+  hsl(1deg 38% 8%) 92%,
+  hsl(0deg 0% 0%) 100%
+); }
+#tabla-info{
+    text-align: center;
+    color:white;
+    background-color: black;
+    margin-top: 15px;
+    border-radius: 10px 10px;
+    box-shadow: 20px 20px 20px 5px rgba(20, 20, 20, 0.3);
+    border-spacing: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#tabla-info th{
+text-align: center;
+}
+
+th,td{
+    width: 190px;
+    height: 50px;
+}
+
+.fechas-tabla{
+font-size: 50px;
+}
+
+.fila.uno:hover, .fila.dos:hover, .fila.cinco:hover, .fila.seis:hover,.fila.nueve:hover{
+    background-color: hsl(120, 85%, 33%);
+}
+
+.fila.uno, .fila.dos, .fila.cinco, .fila.seis,.fila.nueve{
+    background-color:forestgreen;
+}
+
+.fila.tres, .fila.cuatro, .fila.siete, .fila.ocho{
+    background-color: black;
+    color: white;
+}
+
+.fila.tres:hover, .fila.cuatro:hover, .fila.siete:hover, .fila.ocho:hover{
+    background-color: rgba(11, 12, 11, 0.9);
+}
+.fechas-tabla.uno, .fechas-tabla.tres, .fechas-tabla.cinco{
+    background-color:rgb(201, 201, 34);
+}
+
+.fechas-tabla.dos, .fechas-tabla.cuatro{
+    background-color:black;
+    color: white;
+}
+
+.contenedor-debajo-tabla{
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+.contenedor-debajo-tabla ul{
+    list-style: none;
+    height: 130px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contenedor-debajo-tabla li{
+    margin-bottom: 10px;
+}
+#contacto-tabla{
+    display: flex;
+    justify-content: space-between;
+}
+#li-de-contacto{
+    margin-top: 45px;
+}
+
+#contacto-tabla p{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+#contacto-tabla a{
+    text-decoration: none;
+    font-weight: bold;
 }
