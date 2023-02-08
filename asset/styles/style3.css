@@ -119,6 +119,9 @@ justify-content: center;
     text-align: center;
     padding-top: 15px;
 }
+#link-tabla{
+    text-decoration: none;
+}
 
 .txt-mision{
     font-style: normal;
