@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: 'Comic Neue';
 }
-
 #cabecera{
 display: flex;
 height: 300px;
@@ -13,56 +12,58 @@ width: 100%;
 background-image: url('../img/design1_image2.jpg');
 background-size:cover;
 background-repeat: no-repeat;
-filter: grayscale(60%);
+/* filter: grayscale(60%); */
 justify-content:space-between;
+gap:30px;
 }
-
-#cabecera:hover{
+/* #cabecera:hover{
     transition: all 0.9s ease;
     filter: none;
-}
-
+} */
 #titulo-pagina{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 70px;
+    width: 100%;
+    height: 100%;
     font-style: normal;
-    position: absolute;
-    margin-top: -300px;
-    color: black;
-    margin-top:-180px;
+    color: white;
     font-weight: bolder;
+    text-align: center;
 }
 .logo{
-    order:1;
-    align-self: center;
-    background-color: transparent;
-    filter: grayscale(90%);
+    background-color: black;
+    filter:drop-shadow(130%);
     height: 200px;
-    width: 210px;
-    transform: scale(1.2, 0.8);
-    margin-left: 850px;
-    margin-top: -170px;
+    width: 230px;
+
+}
+.contenedor-logo{
+    height: 100%;
+    width: 250px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .barra-navegacion{
-    order:2;
-    background-color: rgb(0, 0, 0, 0.5);
-    width: 15%;
+    width: 180px;
     height: 100%;
-    color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
 }
 .barra-navegacion a{
-    display: block;
-    margin-block: 30px;
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
     color: blanchedalmond;
     font-family: 'Verdana', 'sans-serif';
+   
 }
-
-a:hover{
+.barra-navegacion a:hover{
     transition: all 0.5s ease;
     transform: scale(110%);
     color:goldenrod;
@@ -80,19 +81,18 @@ a:hover{
     font-size: 50px;
 }
 .contenedor-eventos{
-    display: flex;
+display: flex;
 height: 500px;
 position: relative;
 background-image: url('../img/hockey1.jpg');
 background-position: center;
-filter: brightness(50%) grayscale(70%);
+filter: brightness(150%) grayscale(30%);
 justify-content: center;
 }
 .lista-eventos{
     margin-top: 70px;
     width: 500px;
 }
-
 .lista-eventos li h3{
     border-radius: 80px 40px;
     border-color: white;
@@ -110,7 +110,7 @@ justify-content: center;
     filter: brightness(200%);
 }
 .lista-eventos li p{
-    background-color:white;
+    background-color:rgb(199, 97, 185);
     height: 70px;
     color: black;
     font-size: 20px;
@@ -119,24 +119,6 @@ justify-content: center;
     text-align: center;
     padding-top: 15px;
 }
-/* h3{
-    font-style:italic;
-    font-weight: bolder;
-}
-ul{
-    list-style-type: none;
-}
-
-ul > p{
-font-weight: bold;
-}
-
-#texto-email{
-    font-style: normal;
-    text-align:justify;
-    margin-left: 200px;
-    padding-top: 20px;
-} */
 
 .txt-mision{
     font-style: normal;
@@ -195,7 +177,6 @@ padding-top: 30px;
     display: inline-block;
     color: white;
 }
-
 #seccion-reglas{
   background-color: rgb(28, 90, 119);
 }
@@ -225,11 +206,9 @@ padding-bottom: 10px;
 .lista-desordenada.uno li::marker{
 position: relative;
 }
-
 .sublista-ordenada.uno li{
     list-style-position: inside;
 }
-
 .lista-ordenada.uno{
     list-style-position: inside;
 }
@@ -291,7 +270,6 @@ th,td{
     width: 190px;
     height: 50px;
 }
-
 .fechas-tabla{
 font-size: 50px;
 }
@@ -320,7 +298,6 @@ font-size: 50px;
     background-color:black;
     color: white;
 }
-
 .contenedor-debajo-tabla{
     margin-top: 30px;
     display: flex;
@@ -343,7 +320,6 @@ font-size: 50px;
 #li-de-contacto{
     margin-top: 45px;
 }
-
 #contacto-tabla p{
     margin-left: 10px;
     margin-right: 10px;
@@ -352,4 +328,202 @@ font-size: 50px;
 #contacto-tabla a{
     text-decoration: none;
     font-weight: bold;
+}
+.mapas{
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+    background-color:rgb(7, 7, 77);
+    padding-bottom: 20px;
+}
+.mapas div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#formulario-registro{
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    gap:20px;
+}
+.contenedor-formulario{
+    padding-top: 30px;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:30px;
+    background-color: rgba(71, 83, 122, 0.781)
+    /* margin-left: 30px;
+    margin-right: 30px; */
+}
+.nombre-apellido{
+display: flex;
+justify-content:space-between;
+width: 100%;
+gap:5px;
+}
+/* .nombre-apellido label input{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} */
+.nombre-apellido label {
+    width: 100% ;
+}
+#nombre{
+    width: 60%;
+    
+}
+#apellido{
+    width: 75%;
+} 
+.datos-domicilio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+}
+/* .datos-domicilio label{
+    width: 100%;
+} */
+.datos-domicilio .dir{
+width: 50%;
+}
+.datos-domicilio .ciu{
+width: 25%;
+}
+.datos-domicilio .cp{
+width: 20%;
+}
+ #direccion{
+    width: 75%;
+}
+ #ciudad{
+   width: 65%;
+ } 
+ #cp{
+    width:40%;
+ } 
+#apellido, #nombre, #direccion, #ciudad, #cp{
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+}
+.nacimiento-genero{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    gap:100px;
+}
+.nacimiento{
+    width: 50%;
+}
+#calendario-nacim{
+    width: 150px;
+    height: 30px;
+    cursor:pointer;
+}
+.genero{
+    width: 50%;
+    display: flex;
+    justify-content:flex-start;
+    gap:5px;
+}
+.educacion{
+    width: 60%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: -20px;
+}
+.escuelas{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20px;
+}
+#escuelas{
+    height: 30px;
+    width: 150px;
+}
+.escuelas p{
+    margin-top: 5px;
+    padding-right: 5px;
+}
+.posiciones-hockey{
+margin-top: -20px;
+width: 100%;
+display:flex;
+justify-content:flex-start;
+gap: 80px;
+}
+.posiciones-hockey-col-uno, .posiciones-hockey-col-dos{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+#posicion-uno, #posicion-dos, #posicion-tres, #posicion-cuatro{
+    margin-bottom: 15px;
+}
+#talles{
+    height: 30px;
+    width: 150px;
+}
+#permiso p{
+    text-align: justify;
+    line-height: 30px;
+}
+.firmas-fecha{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:15px;
+    padding-bottom: 50px;
+}
+#fecha-firma, #nombre-tutor{
+    height: 30px;
+    width: 240px;
+}
+.cont-botones{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 40px;
+}
+#btn-enviar{
+    background-color: forestgreen;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 12px 12px;
+}
+#btn-enviar:hover{
+    filter: brightness(140%);
+    border-color: rgb(194, 194, 15);
+}
+#btn-resetear{
+    background-color: rgb(30, 40, 184);
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 12px 12px;
+}
+#btn-resetear:hover{
+    filter: brightness(140%);
+    border-color:red;
 }
