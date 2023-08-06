@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/styles/style3.css">
+    <title>MD Hockey League - Registration</title>
+</head>
+<body>
+    <header>
+        <div id="cabecera">
+            <div class="contenedor-logo">
+              <img class="logo" src="asset/img/LogoMightyducks-01.png" alt="img-hockey" width="150" height="120">
+            </div>
+            <div>
+              <h1 id="titulo-pagina">MIGTHY DUCKS HOCKEY LEAGUE</h1>
+            </div>
+            <div>
+              <nav class="barra-navegacion">
+                <a id="btn-index" href="index.html">
+                  Home
+                </a>
+                <a id="btn-about" href="about-us.html">
+                  About MDHL
+                </a>
+                <a id="btn-contact" href="contact.html">
+                  Contact
+                </a>
+                <a id="btn-tabla-juegos" href="game-info.html">
+                  Game Info
+                </a>
+                <a id="btn-reglas" href="rules.html">
+                  Rules
+                </a>
+                <a id="btn-formulario" href="form.html">
+                  Registration
+                </a>
+              </nav>
+            </div>
+          </div>
+        <!-- <div id="cabecera">
+            <div class="contenedor-logo">
+                <img class="logo" src="asset/img/LogoMightyducks-01.png" alt="img-hockey" width="150" height="120">
+            </div>
+            <div>
+                <h1 id="titulo-pagina">MIGTHY DUCKS HOCKEY LEAGUE</h1>
+            </div>
+            <div>
+          <nav class="barra-navegacion">
+            <a id="btn-index" href="index.html">
+              Home
+            </a>
+            <a id="btn-about" href="about-us.html">
+              About MDHL
+            </a>
+            <a id="btn-contact" href="contact.html">
+              Contact
+            </a>
+            <a id="btn-tabla-juegos" href="game-info.html">
+              Game Info
+            </a>
+            <a id="btn-reglas" href="rules.html">
+              Rules
+            </a>
+            <a id="btn-formulario" href="form.html">
+                Registro
+              </a>
+          </nav>
+      </div>
+      
+      <h1 id="titulo-pagina">MIGTHY DUCKS HOCKEY LEAGUE</h1> -->
+  </header>
+    <section class="seccion-pagina">
+        <h2 class="titulo-seccion-pagina">Registration Form</h2>
+    </section>
+    <form id="formulario-registro" action="./show_data.html" method="get">
+        <fieldset class="contenedor-formulario">
+            <div class="nombre-apellido">
+                <label>Player's first name: 
+                    <input type="text" name="nombre" id="nombre" required>
+                    <span>*</span>
+                </label>
+                <label>Last name: 
+                    <input type="text" name="apellido" id="apellido" required>
+                    <span>*</span>
+                </label>
+            </div>
+            <div class="datos-domicilio">
+                <label class="dir">Dirección: 
+                    <input type="text" name="direccion" id="direccion" required>
+                    <span>*</span>
+                </label>
+                <label class="ciu">Ciudad:
+                    <input type="text" name="ciudad" id="ciudad" required>
+                    <span>*</span>
+                </label>
+                <label class="cp">Zip Code: 
+                    <input type="number" name="cp" id="cp" required>
+                    <span>*</span>
+                </label>
+            </div>
+            <div class="nacimiento-genero">
+                <div class="nacimiento">
+                    <label>Birth Date: 
+                    <input type="date" name="nacimiento" id="calendario-nacim" required>
+                    <span>*</span>
+                </label>
+                </div>
+                <div class="genero">
+                    <p>Gender: </p>
+                    <label>Female
+                    <input type="radio" name="genero" id="femenino" value="f" required>
+                    </label>
+                    <label>Male
+                    <input type="radio" name="genero" id="masculino" value="m" required>     
+                    </label>
+                </div>
+            </div>
+            <p id="p-grado">Grade: <span>*</span></p> 
+                  <div class="educacion">
+                        <label for="educacion-pre">Pre-School
+                            <input type="radio" name="educacion" id="educacion-pre" value="pre-school" required>
+                        </label>
+                        <label for="educacion-uno">1st
+                            <input type="radio" name="educacion" id="educacion-uno" value="1st" required>
+                        </label>
+                        <label for="educacion-dos">2nd
+                            <input type="radio" name="educacion" id="educacion-dos" value="2nd" required>
+                        </label>
+                        <label for="educacion-tres">3rd
+                            <input type="radio" name="educacion" id="educacion-tres" value="3th" required>
+                        </label>
+                        <label for="educacion-cuatro">4th
+                            <input type="radio" name="educacion" id="educacion-cuatro" value="4th" required>
+                        </label>
+                        <label for="educacion-cinco">5th
+                            <input type="radio" name="educacion" id="educacion-cinco" value="5th" required>
+                        </label>
+                    </div>
+                    <p id="p-educacion"><strong>Which elementary school do you live near?*</strong></p>
+                    <div class="escuelas">
+                        <!-- <p>Closets schools: </p> -->
+                        <div>
+                            <select name="school" id="escuelas" required>
+                                <option value="">Closets schools:</option>
+                                <option value="aj">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="howard">Howard A Yeager</option>
+                                <option value="marjorie">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="p-posicion"><strong>What position(s) do you normally play? (check all that apply): </strong></p>
+                    <div class="posiciones-hockey">  
+                        <div class="posiciones-hockey-col-uno">
+                            <label>Fordward
+                            <input type="checkbox" name="posicion" id="posicion-uno" value="fordwar">
+                            </label>
+                            <label>Defense
+                            <input type="checkbox" name="posicion" id="posicion-dos" value="defense"> 
+                            </label>
+                        </div>
+                        <div>  
+                            <div class="posiciones-hockey-col-dos">
+                                <label>Midfield
+                                <input type="checkbox" name="posicion" id="posicion-tres" value="mildfield" required>
+                                </label>
+                                <label>Goalkeeper
+                                <input type="checkbox" name="posicion" id="posicion-cuatro" value="goalkeeper" required>
+                                </label>
+                            </div> 
+                        </div>
+                    </div>
+                    <div>
+                        <label for="talles"><strong>Uniform Size</strong></label>
+                        <select name="talle-uniforme" id="talles" required>
+                            <option value="">Select size:</option>
+                            <option value="ys">Youth Small</option>
+                            <option value="ym">Youth Medium</option>
+                            <option value="yl">Youth Large</option>
+                            <option value="s">Small</option>
+                            <option value="ml">Medium Large</option>
+                            <option value="el">Extra-Large</option>
+                        </select>
+                    </div>
+                <section id="permiso">
+                    <h3>Permission to Play</h3>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and voIunteers,incIuding the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation
+                        By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso
+                        acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                </section>
+                    <div class="firmas-fecha">
+                        <label>Parent/Guardian's Name:
+                            <input type="text" id="nombre-tutor" required>
+                        </label>
+                        <label>Date
+                            <input type="date" id="fecha-firma">
+                        </label>
+                    </div>
+                    <div class="cont-botones">
+                        <input type="submit" id="btn-enviar" value="Register">
+                        <input type="reset" id="btn-resetear" value="Reset Form">
+                    </div>
+        </fieldset>
+    </form>
+
+  </body>
+</html>
+
